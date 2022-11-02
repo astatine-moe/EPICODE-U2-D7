@@ -45,6 +45,10 @@
                 text-align: center;
                 color: white;
             }
+            .dolores h2 {
+                display: block;
+                text-align: center;
+            }
 
             .rivilin-jumbotron {
                 background-image: url(./rivilin.png);
@@ -89,7 +93,7 @@
             <div class="container">
                 <div class="collapse navbar-collapse" id="epicode-navbar">
                     <a class="navbar-brand" href="#">Morgan</a>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link" href="#albums">Albums</a>
                         </li>
@@ -427,14 +431,16 @@
         </div>
 
         <a class="anchor" id="rivilin"></a>
-        <div class="text-right container">
-            <button
-                class="btn btn-primary"
-                data-action="hide-section"
-                data-target="rivilin-section"
-            >
-                Hide
-            </button>
+        <div class="container">
+            <h2>
+                My Favourite Artist<button
+                    class="btn btn-primary"
+                    data-action="hide-section"
+                    data-target="rivilin-section"
+                >
+                    Hide
+                </button>
+            </h2>
         </div>
         <section id="rivilin-section">
             <div class="rivilin">
