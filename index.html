@@ -15,70 +15,14 @@
             integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="style.css" />
 
         <title>Morgan Evans Music</title>
-
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-            h2 {
-                margin-top: 0.5em;
-                margin-bottom: 0.5em;
-            }
-
-            .anchor {
-                display: block;
-                position: relative;
-                top: -50px;
-                visibility: hidden;
-            }
-
-            .tapestry img {
-                height: 100%;
-                width: 100%;
-            }
-            .dolores {
-                background-image: url(./dolores.png);
-                background-position: center center;
-                background-repeat: no-repeat;
-                text-align: center;
-                color: white;
-            }
-            .dolores h2 {
-                display: block;
-                text-align: center;
-            }
-
-            .rivilin-jumbotron {
-                background-image: url(./rivilin.png);
-                background-position: center center;
-                background-repeat: no-repeat;
-                text-align: center;
-                color: white;
-            }
-
-            section {
-                border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-                padding-bottom: 1em;
-            }
-
-            h2 {
-                display: flex;
-                justify-content: space-between;
-            }
-            .card-img-top {
-                cursor: pointer;
-            }
-            .card-body {
-                display: none;
-            }
-        </style>
     </head>
     <body class="pt-5">
         <!-- nav -->
 
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <button
                 class="navbar-toggler"
                 type="button"
@@ -116,6 +60,14 @@
             </div>
         </nav>
 
+        <div class="jumbotron fade-in-on-load">
+            <h1>My website</h1>
+            <p>
+                This website is to showcase music I like! It has a list of all
+                the albums and artists I follow and enjoy.
+            </p>
+        </div>
+
         <div
             class="container mt-3"
             data-spy="scroll"
@@ -124,7 +76,7 @@
         >
             <a class="anchor" id="albums"></a>
             <h2>
-                Albums
+                Favourite Albums
                 <button
                     class="btn btn-primary"
                     data-action="hide-section"
@@ -139,7 +91,8 @@
                         class="col-lg-3 col-md-4 col-6"
                         style="margin-bottom: 10px"
                     >
-                        <div class="card card-default">
+                        <div class="card bg-dark">
+                            <span class="badge badge-danger">Hip-Hop/Rap</span>
                             <img
                                 class="card-img-top"
                                 src="./albums/grimsalvo1.jpg"
@@ -160,7 +113,8 @@
                         class="col-lg-3 col-md-4 col-6"
                         style="margin-bottom: 10px"
                     >
-                        <div class="card card-default">
+                        <div class="card bg-dark">
+                            <span class="badge badge-danger">Hip-Hop/Rap</span>
                             <img
                                 class="card-img-top"
                                 src="./albums/rivilin2.jpg"
@@ -181,7 +135,10 @@
                         class="col-lg-3 col-md-4 col-6"
                         style="margin-bottom: 10px"
                     >
-                        <div class="card card-default">
+                        <div class="card bg-dark">
+                            <span class="badge badge-danger"
+                                >Alternative/Indie</span
+                            >
                             <img
                                 class="card-img-top"
                                 src="./albums/astro2.png"
@@ -202,7 +159,10 @@
                         class="col-lg-3 col-md-4 col-6"
                         style="margin-bottom: 10px"
                     >
-                        <div class="card card-default">
+                        <div class="card bg-dark">
+                            <span class="badge badge-danger"
+                                >Plunderphonics</span
+                            >
                             <img
                                 class="card-img-top"
                                 src="./albums/pogo1.jpg"
@@ -342,7 +302,7 @@
                         class="col-lg-3 col-md-4 col-6"
                         style="margin-bottom: 10px"
                     >
-                        <div class="card card-default">
+                        <div class="card bg-dark">
                             <img
                                 class="card-img-top"
                                 src="./albums/rivilin1.jpg"
@@ -364,7 +324,7 @@
                         class="col-lg-3 col-md-4 col-6"
                         style="margin-bottom: 10px"
                     >
-                        <div class="card card-default">
+                        <div class="card bg-dark">
                             <img
                                 class="card-img-top"
                                 src="./albums/rivilin1.jpg"
@@ -386,7 +346,7 @@
                         class="col-lg-3 col-md-4 col-6"
                         style="margin-bottom: 10px"
                     >
-                        <div class="card card-default">
+                        <div class="card bg-dark">
                             <img
                                 class="card-img-top"
                                 src="./albums/rivilin1.jpg"
@@ -408,7 +368,7 @@
                         class="col-lg-3 col-md-4 col-6"
                         style="margin-bottom: 10px"
                     >
-                        <div class="card card-default">
+                        <div class="card bg-dark">
                             <img
                                 class="card-img-top"
                                 src="./albums/rivilin1.jpg"
@@ -525,6 +485,201 @@
         </div>
 
         <div class="container">
+            <a class="anchor" id="tracklist"></a>
+            <h2>
+                Grim Salvo Tracklist<button
+                    class="btn btn-primary"
+                    data-action="hide-section"
+                    data-target="tracklist-section"
+                >
+                    Hide
+                </button>
+            </h2>
+            <section id="tracklist-section">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Artist</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Moth Grinder</td>
+                            <td>Grim Salvo</td>
+                            <td>3:14</td>
+                            <td>
+                                <button
+                                    data-action="remove-row"
+                                    class="btn btn-danger"
+                                >
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Lurch.Lung</td>
+                            <td>Grim Salvo, Witchouse 40k</td>
+                            <td>3:56</td>
+                            <td>
+                                <button
+                                    data-action="remove-row"
+                                    class="btn btn-danger"
+                                >
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Chemical Peel Freestyle</td>
+                            <td>Grim Salvo</td>
+                            <td>2:43</td>
+                            <td>
+                                <button
+                                    data-action="remove-row"
+                                    class="btn btn-danger"
+                                >
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>10:1 Ikejime</td>
+                            <td>Grim Salvo, ONI INC., CoaastGxd</td>
+                            <td>3:01</td>
+                            <td>
+                                <button
+                                    data-action="remove-row"
+                                    class="btn btn-danger"
+                                >
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Ergot</td>
+                            <td>Grim Salvo</td>
+                            <td>3:13</td>
+                            <td>
+                                <button
+                                    data-action="remove-row"
+                                    class="btn btn-danger"
+                                >
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>
+                                <button
+                                    class="btn btn-primary"
+                                    data-toggle="modal"
+                                    data-target="#add-track-modal"
+                                >
+                                    Add Track
+                                </button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+
+        <div id="add-track-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Track</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <label for="track-number"
+                                        >Track Number</label
+                                    >
+                                    <input
+                                        type="number"
+                                        name="track-number"
+                                        id="track-number"
+                                        placeholder="Track Number"
+                                        class="form-control"
+                                    />
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label for="track-title">Track title</label>
+                                    <input
+                                        type="text"
+                                        name="track-title"
+                                        id="track-title"
+                                        placeholder="Track title"
+                                        class="form-control"
+                                    />
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label for="artist-name">Artist name</label>
+                                    <input
+                                        type="text"
+                                        name="artist-name"
+                                        id="artist-name"
+                                        placeholder="Track title"
+                                        class="form-control"
+                                    />
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label for="track-duration"
+                                        >Track duration</label
+                                    >
+                                    <input
+                                        type="text"
+                                        name="track-duration"
+                                        id="track-duration"
+                                        placeholder="Track title"
+                                        class="form-control"
+                                    />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="add-track"
+                        >
+                            Save changes
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
             <footer
                 class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
             >
@@ -564,72 +719,6 @@
             crossorigin="anonymous"
         ></script>
 
-        <script>
-            function shuffle(array) {
-                let currentIndex = array.length,
-                    randomIndex;
-
-                // While there remain elements to shuffle.
-                while (currentIndex != 0) {
-                    // Pick a remaining element.
-                    randomIndex = Math.floor(Math.random() * currentIndex);
-                    currentIndex--;
-
-                    // And swap it with the current element.
-                    [array[currentIndex], array[randomIndex]] = [
-                        array[randomIndex],
-                        array[currentIndex],
-                    ];
-                }
-
-                return array;
-            }
-            $(function () {
-                //when DOM ready
-                $("body").scrollspy({ target: "#epicode-navbar" });
-                //shuffle tapestry
-
-                let eles = [];
-
-                $(".tapestry > div").each((i, ele) => {
-                    eles.push(ele);
-                    ele.remove();
-                });
-                shuffle(eles);
-                for (const ele of eles) {
-                    $(".tapestry").append(ele);
-                }
-                //take existing divs, shuffle, and reappend
-
-                //get album count
-                const $albums = $(".card");
-
-                $("#albums-count").text($albums.length);
-            });
-
-            $('[data-action="hide-section"]').on("click", function () {
-                //alternative: use bootstrap "collapse".
-                //Reason I didn't use: Ability to change button text to "Show" / "Hide"
-                const target = $(this).data("target");
-
-                const $target = $("#" + target);
-
-                const $isHidden = $target.data("hidden") ? true : false;
-
-                if ($isHidden) {
-                    $(this).text("Hide");
-                    $target.css({ display: "block" });
-                    $target.data("hidden", null);
-                } else {
-                    $(this).text("Show");
-                    $target.css({ display: "none" });
-                    $target.data("hidden", true);
-                }
-            });
-
-            $(".card-img-top").on("click", function () {
-                $(this).parent().find(".card-body").toggle();
-            });
-        </script>
+        <script src="./script.js"></script>
     </body>
 </html>

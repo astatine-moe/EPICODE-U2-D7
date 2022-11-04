@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    background: rgb(30, 30, 30);
+    color: white;
+    overflow-x: hidden;
+}
+.jumbotron {
+    padding: 4rem 1rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    background-color: #000000;
+    border-radius: 0.3rem;
+
+    text-align: center;
+}
+h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.tapestry img {
+    height: 100%;
+    width: 100%;
+}
+.dolores {
+    background-image: url(./dolores.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+.dolores h2 {
+    display: block;
+    text-align: center;
+}
+
+.rivilin-jumbotron {
+    background-image: url(./rivilin.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+section {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1em;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+}
+.card-img-top {
+    cursor: pointer;
+}
+.card-body {
+    display: none;
+}
+.fade-in-on-load {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-in {
+    opacity: 1;
+}
+
+.card {
+    position: relative;
+}
+
+.card .badge {
+    position: absolute;
+
+    top: 1em;
+    left: 1.25em;
+
+    box-shadow: 5px 10px 8px #0000005a;
+}
+.list-group-item {
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+.list-group-item:hover {
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+#add-track:hover {
+    box-shadow: 0px 10px 15px #0000005a;
+}
+
+.modal-header h5 {
+    color: black !important;
+}
+
+.modal label {
+    color: black;
+}
+
+#tracklist-section table button.btn-danger {
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+}
+
+#tracklist-section table tr:hover button.btn-danger {
+    opacity: 1;
+}
